@@ -41,7 +41,7 @@ window.location = "/skillsDetails"
         </CardContent> */}
       {/* </CardActionArea> */}
       <CardActions>
-        <Button size="large" color="primary" onClick={handleClick}>
+        <Button size="large" color="black" onClick={handleClick}>
         Technical Skills
         </Button>
         {/* <Button size="small" color="primary">

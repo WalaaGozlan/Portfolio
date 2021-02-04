@@ -9,7 +9,9 @@ import Projects from "./components/projects"
 import ProjectsDetails from "./components/projectsDetails"
 
 import Education from "./components/education"
-import EducationDetails from "./components/educationDetails"
+import EducationDetails from "./components/educationDetails";
+
+import Introduction from "./components/introduction"
 
 import { makeStyles } from '@material-ui/core/styles';
 import ContactMe from "./components/contactMe"
@@ -24,7 +26,8 @@ const useStyles = makeStyles({
   gridContainer : {
     paddingLeft : "50px",
     paddingRight : "50px",
-    paddingBottom : "50px"
+    paddingBottom : "50px",
+    
   }
 });
 
@@ -32,12 +35,23 @@ function App() {
   const classes = useStyles();
   return (
     <div className="App">
-      <p style={{fontSize:"70px", fontStyle:"revert", color:"#5F9EA0", textAlign: 'center'}}>Walaa Gozlan</p>
-      <p style={{fontSize:"50px", textAlign: 'center', color:"white"}}>Dreams is not what you see in sleep ....<br/> It is the thing which doesn't let you sleep </p>
+      <div>
+      <Introduction></Introduction> 
+      <br/> <br/> <br/> 
+
+      </div>
+                  
+                     
+                
+     
+      {/* <p style={{fontSize:"70px", fontStyle:"revert", color:"#5F9EA0", textAlign: 'center'}}>Walaa Gozlan</p>
+      <p style={{fontSize:"50px", textAlign: 'center', color:"white"}}>Dreams is not what you see in sleep ....<br/> It is the thing which doesn't let you sleep </p> */}
       
       <Router>
         
         <Switch>
+        {/* <Route path="/"  component={Introduction}/> */}
+  
         <Route path="/aboutMeDetails" exact component={AboutMeDetails}/>
         <Route path="/contactMeDetails" exact component={ContactMeDetails}/>
         <Route path="/educationDetails" exact component={EducationDetails}/>
@@ -67,6 +81,7 @@ function App() {
       </Grid>
         </Switch>
       </Router>
+      
     
     </div>
    

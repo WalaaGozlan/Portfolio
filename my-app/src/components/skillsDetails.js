@@ -10,6 +10,9 @@ import Jquery from "./jqueryLogo.png";
 import Node from "./nodeLogo.png";
 import Socket from "./socketioLogo.png";
 import Heroku from "./herokuLogo.png";
+import Express from "./express.png";
+import ReactLogo from "./reactLogo.png";
+
 export default function SkillsDetails (){
     return (
         <div>
@@ -30,6 +33,9 @@ export default function SkillsDetails (){
         <img src={Node} alt="logo" style={{padding:'30px', height: '100px', width:"250px"}}></img>
         <img src={Socket} alt="logo" style={{padding:'30px', height: '150px', width:"250px"}}></img>
         <img src={Heroku} alt="logo" style={{padding:'30px', height: '150px', width:"350px"}}></img>
+        <img src={Express} alt="logo" style={{padding:'30px', height: '150px', width:"350px"}}></img>
+        <img src={ReactLogo} alt="logo" style={{padding:'30px', height: '150px', width:"350px"}}></img>
+
 
         </div>
     );
